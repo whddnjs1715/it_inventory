@@ -1,0 +1,61 @@
+<style>
+  .main {
+    padding: 20px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .employees, .devices {
+    width: 48%; /* 또는 적절한 너비 */
+  }
+
+  mat-card {
+    margin-bottom: 20px;
+  }
+
+  mat-card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  mat-card-content {
+    font-size: 16px;
+  }  
+</style>
+
+<main class="main">
+  <mat-toolbar color="primary">
+    <span>IT Inventory Management</span>
+  </mat-toolbar>
+  <div class="container">
+    <div class="employees">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Employees</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <!-- Employee list goes here -->
+          <p>List of employees...</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  
+    <div class="devices">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Devices</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <!-- Device list goes here -->
+          <p>List of devices...</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>  
+</main>
+
+<router-outlet />
